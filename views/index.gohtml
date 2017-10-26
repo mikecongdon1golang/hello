@@ -8,12 +8,11 @@
       <p>hello555</p>
         {{if .Data}}
         <p>the list:</p>
-        {{range .Data}}
-          <p> a data {{.}}</p>
+        {{range $key, $val := .Data}}
+          <p> a data {{$key}}</p>
+        
         {{end}}
-        {{range .Data}}
-          <p>a email {{.id}}</p>
-        {{end}}
+        
         {{else}}
     <p>no contents</p>
       {{end}}
