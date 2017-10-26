@@ -1,0 +1,23 @@
+
+{{define "yield"}}
+<div class="container">  
+  <div class="jumbotron">
+    <h1>Welcome to my site!</h1>
+    <p>This is where I would normally ask you to sign up for something.</p>
+    <a href="/contact"> contact me here </a>
+      <p>hello555</p>
+        {{if .Data}}
+        <p>the list:</p>
+        {{range .Data}}
+          <p> a data {{.}}</p>
+        {{end}}
+        {{range .Data}}
+          <p>a email {{.id}}</p>
+        {{end}}
+        {{else}}
+    <p>no contents</p>
+      {{end}}
+  </div>
+
+</div>  
+{{end}}

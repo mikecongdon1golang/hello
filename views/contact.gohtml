@@ -1,0 +1,16 @@
+{{define "yield"}}
+<h1>Thanks for reaching out!</h1>  
+<div class="well">  
+  <form action="/contact" method="POST">
+    <div class="form-group">
+      <label for="email">Your Email</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+    </div>
+    <div class="form-group">
+      <label for="message">message</label>
+      <input type="textarea" class="form-control" id="message" name="message" placeholder="Enter your message here">
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+</div>  
+{{end}}
